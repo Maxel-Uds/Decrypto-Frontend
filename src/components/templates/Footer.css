@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    background-color: #FFF;
+    overflow: hidden;
+    white-space: nowrap;
+}
