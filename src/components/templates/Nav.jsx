@@ -5,7 +5,8 @@ import './Nav.css';
 export default function nav(props) {
     return (
         <aside className="menu">
-            <nav className="links">
+            <hr/>
+            <nav className="links">               
                 <Link path="/" icon="fa fa-home" label="Início"/>
                 <Link path="/" icon="fa fa-lock" label="Codificar Mensagem"/>
                 <Link path="/" icon="fa fa-unlock-alt" label="Decodificar Mensagem"/>

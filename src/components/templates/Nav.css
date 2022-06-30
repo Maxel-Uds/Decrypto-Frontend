@@ -1,4 +1,8 @@
 .menu {
-    padding-top: 30px;
+    padding-top: 0px;
     background-color: var(--bg-dark);
+}
+
+.menu hr {
+    margin: 0px;
 }
