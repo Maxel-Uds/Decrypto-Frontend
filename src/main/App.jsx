@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../components/templates/Nav';
 import Logo from '../components/templates/Logo';
-import Main from '../components/templates/Main';
+import Home from '../components/Home/Home';
 import Footer from '../components/templates/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -12,7 +12,7 @@ export default function app(props) {
         <div className="app">
             <Logo/>
             <Nav/>
-            <Main/>
+            <Home/>
             <Footer/>
         </div>
     );
