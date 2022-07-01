@@ -4,8 +4,8 @@ import './Link.css';
 
 export default function link(props) {
     return (
-        <a href={props.path} className="link">
+        <Link to={props.path} className="link">
             <i className={props.icon}></i> {props.label}
-        </a>
+        </Link>
     );
 }

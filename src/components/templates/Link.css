@@ -6,6 +6,7 @@
     font-size: 1.1em;
     color: #FFF;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .link:hover {
