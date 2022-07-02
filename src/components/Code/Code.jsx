@@ -41,9 +41,9 @@ export default class Code extends Component {
                 <div className="row">
                     <div className="form-group row">
                         <label className="col-12 col-md-3 col-form-label">Confirme a Senha:</label>
-                        <div className=" col-12 col-md-9" id="confirmPassDiv">
+                        <div className=" col-12 col-md-9">
                             <input type="password" className="form-control" name="passConfirm" required id="passConfirmInput" placeholder="Senha novamente..." value={this.state.editable.passConfirm} onChange={this.handleOnChange}/>
-                            <div className="invalid-feedback" id="warningDiv">As senhas precisam ser iguais!</div>
+                            <div className="invalid-feedback">As senhas precisam ser iguais!</div>
                         </div>
                     </div>
                 </div>
