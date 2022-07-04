@@ -12,7 +12,7 @@ export default function home(props) {
                     <p className="lead mb-1">Para codificar uma mensagem:</p>
                     <ol className="list-group list-group-numbered">
                         <li className="list-group-item">Entre na aba "Codificar Mensagem"</li>
-                        <li className="list-group-item">Escolha uma senha segura e sem espaços para codificar a mensagem</li>
+                        <li className="list-group-item">Escolha uma senha segura para codificar a mensagem</li>
                         <li className="list-group-item">Digite sua mensagem</li>
                         <li className="list-group-item">Salve o hash e o id que foram gerados em um local seguro</li>
                     </ol>
