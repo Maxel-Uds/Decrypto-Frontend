@@ -3,8 +3,8 @@
     --header-height: 90px;
     --aside-width: 250px;
     --footer-height: 50px;
-    --menu-top-height: 65px;
-    --logo-height: 70px;
+    --menu-top-height: 50px;
+    --logo-height: 60px;
     --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06)
 }
 
@@ -43,4 +43,12 @@
 
 .footer {
     grid-area: footer;
+}
+
+@media(max-width: 1200px) {
+    .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: var(--logo-height) var(--menu-top-height) 1fr var(--footer-height);
+        grid-template-areas: "logo" "nav" "content" "footer";
+    }
 }

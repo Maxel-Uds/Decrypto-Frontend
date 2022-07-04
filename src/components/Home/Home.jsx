@@ -7,7 +7,7 @@ export default function home(props) {
             <h1 className="display-4">Bem Vindo ao Decrypto!</h1>
             <hr/>
             <p className="lead p-1">Aqui você encontrará um meio seguro e eficiente de criptografar suas mensagens com um simples clique!</p>
-            <span className="lists d-none d-xl-grid">
+            <span className="lists">
                 <span className="left">
                     <p className="lead mb-1">Para codificar uma mensagem:</p>
                     <ol className="list-group list-group-numbered">

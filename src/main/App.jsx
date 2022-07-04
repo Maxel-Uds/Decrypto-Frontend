@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Footer from '../components/templates/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/js/dist/dropdown';
 import './App.css';
 
 export default function app(props) {
