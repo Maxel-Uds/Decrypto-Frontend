@@ -1,0 +1,15 @@
+.link {
+    display: block;
+    width: 100%;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #FFF;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #FFF;
+    background: linear-gradient(135deg, #2c7c99 0%, #38857a 100%);
+}

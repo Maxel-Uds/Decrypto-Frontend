@@ -10,6 +10,7 @@ export default function routes(props) {
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/code" element={<Code/>}/>
             <Route exact path="/decode" element={<Decode/>}/>
+            {/* <Route exact path="https://github.com/Maxel-Uds/Decrypto-backend"/> */}
             <Route path="*" element={<Home/>}/>
         </Routes>
     );
