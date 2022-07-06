@@ -61,7 +61,7 @@ export default function form(props) {
 
                 <div className="row">
                     <div className="col-12 d-flex justify-content-center">
-                        <button className="btn btn-success" disabled={props.disableButton}>Codificar</button>
+                        <button className="btn btn-success" disabled={props.disableButton} onClick={() => props.sendRequest()}>Codificar</button>
                         <button className="btn btn-danger mx-2" onClick={() => props.clear()}>Cancelar</button>
                     </div>
                 </div>

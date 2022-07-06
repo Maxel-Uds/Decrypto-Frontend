@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Axios from 'axios';
 import Main from '../templates/Main';
 import CodeForm from '../Forms/CodeForm';
 
@@ -21,6 +22,7 @@ export default class Code extends Component {
         super(props);
         this.handleOnChange = this.handleOnChange.bind(this);
         this.clearFields = this.clearFields.bind(this);
+        this.codeMessage = this.codeMessage.bind(this);
     }
 
     clearFields(event) {
@@ -59,10 +61,20 @@ export default class Code extends Component {
         return (passIsEqual && this.state.editable.pass.length >= 5 && this.state.editable.message.length >= 20)? this.setState({ disableButton: false }) : this.setState({ disableButton: true });
     }
 
+    async codeMessage() {
+        await Axios.post('https://the-encryptor.herokuapp.com/encrypt/code', {
+            message: this.state.editable.message,
+            password: this.state.editable.pass
+        })
+        .then(resp => {
+            this.setState({ messageId: resp.data.id, codeMessage: resp.data.message });
+        });
+    }
+
     render() {
         return (
             <Main title="Encode" subtitle="Transforme qualquer mensagem em um hash indecifrável!" icon="fa fa-lock">
-                <CodeForm { ...this.state } clear={this.clearFields} change={this.handleOnChange}/>
+                <CodeForm { ...this.state } clear={this.clearFields} change={this.handleOnChange} sendRequest={this.codeMessage}/>
             </Main>
         );
     }
