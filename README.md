@@ -1,6 +1,8 @@
 # Decrypto-Frontend
 
-Frontend que vai consumir a API do projeto Decrypto-Backend para codificar e decodificar mensagens 
+Frontend que vai consumir a API do projeto Decrypto-Backend para codificar e decodificar mensagens\
+Para visitar o site clique [aqui](https://decrypt-site.herokuapp.com/)\
+Obs: pode demorar para carregar por estar hospedado de graça na heroku 
 
 ## Available Scripts
 
