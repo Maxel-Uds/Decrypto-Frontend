@@ -68,6 +68,9 @@ export default class Code extends Component {
         })
         .then(resp => {
             this.setState({ messageId: resp.data.id, codeMessage: resp.data.message });
+        })
+        .catch(err => {
+            alert('Ocorreu um erro interno e não conseguimos processar sua requisição!');
         });
     }
 

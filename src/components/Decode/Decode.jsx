@@ -48,6 +48,14 @@ export default class Decode extends Component {
         })
         .then(resp => {
             this.setState({ decodeMessage: resp.data.message });
+        })
+        .catch(err => {
+            if(err.response.data.status === 404) {
+                alert(err.response.data.message);
+            }
+            else {
+                alert('Ocorreu um erro interno e não conseguimos processar sua requisição!');
+            }
         });
     }
 
